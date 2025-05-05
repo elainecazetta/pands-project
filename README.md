@@ -2,9 +2,11 @@
 **Module:** Programming and Scripting  
 **Lecturer:** Andrew Beatty  
 
----
 
 # Project: Iris Dataset Analysis
+
+![Iris Setosa](https://en.wikipedia.org/wiki/File:Kosaciec_szczecinkowaty_Iris_setosa.jpg)
+
 **About the project:**
 
 This project was developed as part of the *Programming and Scripting* module. It aims to analize the famous [Fisher's Iris Dataset](https://archive.ics.uci.edu/dataset/53/iris), apply basic data processing and visualization techniques, and present meaningful insights using Python.
