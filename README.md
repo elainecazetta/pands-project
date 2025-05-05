@@ -1,13 +1,11 @@
 # Higher Diploma in Science in Computing (Data Analytics)
-**Module:** Programming and Scripting
-**Lecturer:** Andrew Beatty
+**Module:** Programming and Scripting  
+**Lecturer:** Andrew Beatty  
 
 ---
 
 # Project: Iris Dataset Analysis
 **About the project:**
-
----
 
 This project was developed as part of the *Programming and Scripting* module. It aims to analize the famous [Fisher's Iris Dataset](https://github.com/elainecazetta/pands-project/blob/main/iris.csv), apply basic data processing and visualization techniques, and present meaningful insights using Python.
 
@@ -49,6 +47,17 @@ To run this project, you'll need **Python 3** and the following packages:
 
 ```bash
 pip install numpy pandas matplotlib seaborn
+```
+
+---
+
+## Tools & Libraries  
+
+- [`numpy`](https://numpy.org/) – For numerical operations and working with arrays  
+- [`pandas`](https://pandas.pydata.org/) – For data manipulation and analysis  
+- [`matplotlib`](https://matplotlib.org/) – For creating basic data visualizations like histograms and scatter plots  
+- [`seaborn`](https://seaborn.pydata.org/) – Built on top of matplotlib, provides cleaner and more informative visualizations  
+- [`scikit-learn`](https://scikit-learn.org/stable/) – Includes the Iris dataset
 
 ---
 
