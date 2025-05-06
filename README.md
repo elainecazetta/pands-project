@@ -1,5 +1,5 @@
 # Higher Diploma in Science in Computing (Data Analytics)
----
+
 **Module:** Programming and Scripting  
 **Lecturer:** Andrew Beatty  
 **Author:** Elaine R. Cazetta
@@ -12,13 +12,13 @@
 
 ---
 
-**About the project:**
+## About the project:
 
 This project was developed as part of the *Programming and Scripting* module. It aims to analize the famous [Fisher's Iris Dataset](https://archive.ics.uci.edu/dataset/53/iris)[1], apply basic data processing and visualization techniques, and present meaningful insights using Python.
 
 ---
 
-**About the dataset:**
+## About the dataset:
 
 The [Iris dataset](https://doi.org/10.24432/C56C76) was created in 1936 by the British statistician and biologist Ronald A. Fisher [3], and it is frequently used for testing classification algorithms and practicing basic data analysis because it’s simple, well-structured, and visually easy to understand [2]. It contains 150 records of iris flowers, with the following features measured in centimeters: [1]
 
