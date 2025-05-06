@@ -1,4 +1,5 @@
 # Higher Diploma in Science in Computing (Data Analytics)
+---
 **Module:** Programming and Scripting  
 **Lecturer:** Andrew Beatty  
 **Author:** Elaine R. Cazetta
@@ -8,6 +9,8 @@
 # Project: Iris Dataset Analysis
 
 ![Iris Flowers](https://github.com/elainecazetta/private_folder/blob/main/Iris_Flower.png)
+
+---
 
 **About the project:**
 
@@ -67,7 +70,8 @@ pip install numpy pandas matplotlib seaborn
 
 ## References  
 [1] R. Fisher. Iris, UCI Machine Learning Repository, 1936. Available in: https://doi.org/10.24432/C56C76. [Accessed 04 May 2025]  
-[2] Kelleher, Curran. The Iris Dataset Explained. Available in: https://gist.github.com/curran/a08a1080b88344b0c8a7. [Accessed 05 May 2025] 
-[3] Iris Flower data set - Wikipedia. Available in: https://en.wikipedia.org/wiki/Iris_flower_data_set. [Accessed 06 May 2025]   
+[2] Kelleher, Curran. The Iris Dataset Explained. Available in: https://gist.github.com/curran/a08a1080b88344b0c8a7. [Accessed 05 May 2025]  
+[3] Iris Flower data set - Wikipedia. Available in: https://en.wikipedia.org/wiki/Iris_flower_data_set. [Accessed 06 May 2025]  
+[4] Image, credits: medium.com. Available in: https://3tw.medium.com/scikit-learn-the-iris-dataset-and-machine-learning-the-journey-to-a-new-skill-c8d2f537e087 [Accessed 06 May 2025]  
 
 ## End  
