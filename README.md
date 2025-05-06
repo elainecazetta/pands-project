@@ -1,21 +1,23 @@
 # Higher Diploma in Science in Computing (Data Analytics)
 **Module:** Programming and Scripting  
 **Lecturer:** Andrew Beatty  
+**Author:** Elaine R. Cazetta
 
+---
 
 # Project: Iris Dataset Analysis
 
-![Iris Setosa](https://en.wikipedia.org/wiki/File:Kosaciec_szczecinkowaty_Iris_setosa.jpg)
+![Iris Flowers](https://github.com/elainecazetta/private_folder/blob/main/Iris_Flower.png)
 
 **About the project:**
 
-This project was developed as part of the *Programming and Scripting* module. It aims to analize the famous [Fisher's Iris Dataset](https://archive.ics.uci.edu/dataset/53/iris), apply basic data processing and visualization techniques, and present meaningful insights using Python.
+This project was developed as part of the *Programming and Scripting* module. It aims to analize the famous [Fisher's Iris Dataset](https://archive.ics.uci.edu/dataset/53/iris)[1], apply basic data processing and visualization techniques, and present meaningful insights using Python.
 
 ---
 
 **About the dataset:**
 
-The [Iris dataset](https://doi.org/10.24432/C56C76) was created in 1936 by R. A. Fisher, and it is frequently used for testing out machine learning algorithms [2]. It contains 150 records of iris flowers, with the following features measured in centimeters: [1]
+The [Iris dataset](https://doi.org/10.24432/C56C76) was created in 1936 by the British statistician and biologist Ronald A. Fisher [3], and it is frequently used for testing classification algorithms and practicing basic data analysis because it’s simple, well-structured, and visually easy to understand [2]. It contains 150 records of iris flowers, with the following features measured in centimeters: [1]
 
 - *Sepal length*
 - *Sepal width*
@@ -65,6 +67,7 @@ pip install numpy pandas matplotlib seaborn
 
 ## References  
 [1] R. Fisher. Iris, UCI Machine Learning Repository, 1936. Available in: https://doi.org/10.24432/C56C76. [Accessed 04 May 2025]  
-[2] Kelleher, Curran. The Iris Dataset Explained. Available in: https://gist.github.com/curran/a08a1080b88344b0c8a7. [Accessed 05 May 2025]  
+[2] Kelleher, Curran. The Iris Dataset Explained. Available in: https://gist.github.com/curran/a08a1080b88344b0c8a7. [Accessed 05 May 2025] 
+[3] Iris Flower data set - Wikipedia. Available in: https://en.wikipedia.org/wiki/Iris_flower_data_set. [Accessed 06 May 2025]   
 
 ## End  
