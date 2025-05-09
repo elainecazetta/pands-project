@@ -1,16 +1,18 @@
 # Author: Elaine Cazetta
 # Description: This program is part of the Iris Dataset Analysis Project.
-# It loads the Iris dataset, saves it as a CSV file, and generates a summary 
-# of each variable, saving the results to a text file.
+# It loads the Iris dataset, saves it as a CSV file, generates a summary 
+# of each variable saving the results to a text file,
+# outputs histograms, scatterplots and performs other analysis. 
 # Module: Programming and Scripting
 # Lecturer: Andrew Beatty
 # Institution: Atlantic Technological University
 # Year: 2025
 
-# Adding the Iris Dataset to my repository & imports:
-from sklearn.datasets import load_iris
+# Imports:
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
 
 # Load the Iris dataset
 iris = load_iris()
@@ -71,4 +73,38 @@ plt.xlabel('Petal Width (cm)')
 plt.ylabel('Frequency')
 plt.grid()
 plt.savefig('hist_petal_width.png')
+plt.close()
+
+# Creating and saving scatter plots for each pair
+# of variables grouped by species:
+# Define colors and labels
+colors = ["dodgerblue", "darkorange", "mediumvioletred"]
+labels = iris.target_names
+
+# Scatter plot: Sepal Length vs Sepal Width
+plt.figure(figsize=(8, 6))
+for i in range(3):
+    subset = df[df['species'] == i]
+    plt.scatter(subset["sepal length (cm)"], subset["sepal width (cm)"],
+                color=colors[i], label=labels[i])
+plt.xlabel("Sepal Length (cm)")
+plt.ylabel("Sepal Width (cm)")
+plt.title("Sepal Length vs Sepal Width")
+plt.grid()
+plt.legend()
+plt.savefig("sepal_scatter_plot.png")
+plt.close()
+
+# Scatter plot: Petal Length vs Petal Width
+plt.figure(figsize=(8, 6))
+for i in range(3):
+    subset = df[df['species'] == i]
+    plt.scatter(subset["petal length (cm)"], subset["petal width (cm)"],
+                color=colors[i], label=labels[i])
+plt.xlabel("Petal Length (cm)")
+plt.ylabel("Petal Width (cm)")
+plt.title("Petal Length vs Petal Width")
+plt.grid()
+plt.legend()
+plt.savefig("petal_scatter_plot.png")
 plt.close()
