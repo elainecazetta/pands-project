@@ -42,7 +42,7 @@ plt.title('Histogram of Sepal Length')
 plt.xlabel('Sepal Length (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('hist_sepal_length.png')
+plt.savefig('fig1_hist_sepal_length.png')
 plt.close()
 
 # Histogram: Sepal Width
@@ -52,7 +52,7 @@ plt.title('Histogram of Sepal Width')
 plt.xlabel('Sepal Width (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('hist_sepal_width.png')
+plt.savefig('fig2_hist_sepal_width.png')
 plt.close()
 
 # Histogram: Petal Length
@@ -62,7 +62,7 @@ plt.title('Histogram of Petal Length')
 plt.xlabel('Petal Length (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('hist_petal_length.png')
+plt.savefig('fig3_hist_petal_length.png')
 plt.close()
 
 # Histogram: Petal Width
@@ -72,7 +72,7 @@ plt.title('Histogram of Petal Width')
 plt.xlabel('Petal Width (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('hist_petal_width.png')
+plt.savefig('fig4_hist_petal_width.png')
 plt.close()
 
 # Creating and saving scatter plots for each pair
@@ -92,7 +92,7 @@ plt.ylabel("Sepal Width (cm)")
 plt.title("Sepal Length vs Sepal Width")
 plt.grid()
 plt.legend()
-plt.savefig("sepal_scatter_plot.png")
+plt.savefig("fig5_sepal_scatter_plot.png")
 plt.close()
 
 # Scatter plot: Petal Length vs Petal Width
@@ -106,5 +106,5 @@ plt.ylabel("Petal Width (cm)")
 plt.title("Petal Length vs Petal Width")
 plt.grid()
 plt.legend()
-plt.savefig("petal_scatter_plot.png")
+plt.savefig("fig6_petal_scatter_plot.png")
 plt.close()
