@@ -1,9 +1,13 @@
 # Author: Elaine Cazetta
-# Description: This program is part of the Iris Dataset Analysis Project.
-# It loads the Iris dataset, saves it as a CSV file, generates a summary 
-# of each variable saving the results to a text file,
-# outputs histograms, scatterplots and performs other analysis. 
-# Module: Programming and Scripting
+# Description: This script is part of the Iris Dataset Analysis Project for the 
+# Programming and Scripting module. It performs basic data analysis using the 
+# Iris dataset, including:
+# - Exporting the dataset to CSV format
+# - Generating summary statistics
+# - Creating histograms for each feature
+# - Visualising relationships between features using scatter plots
+# - Exploring species-wise differences with box plots
+# - Displaying feature correlations using a heatmap
 # Lecturer: Andrew Beatty
 # Institution: Atlantic Technological University
 # Year: 2025
@@ -14,19 +18,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 
-# Load the Iris dataset
+# Load the Iris dataset from sklearn
 iris = load_iris()
 
-# Create a DataFrame
+# Create a pandas dataframe with the feature data
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+# Add a 'species' column to identify each row
 df['species'] = iris.target
 
-# Save the dataset to a CSV file
+# Save the full dataset to a CSV file for external use or review
 df.to_csv('iris.csv', index=False)
 
-# Create a summary using the describe() function
-# The summary has the following information: count, mean, standard
-# deviation, min, 25%, 50% and 75% percentiles, and max.
+# Generate summary statistics for each numeric feature
+# Includes: count, mean, std deviation, min, 25%, 50%, 75%, and max values
 summary = df.describe()
 
 # Save the summary to a text file
@@ -34,7 +38,8 @@ with open('summary.txt', 'w') as f:
     f.write("Summary of Each Variable in the Iris Dataset\n")
     f.write(summary.to_string())  # Converts the summary dataframe into a string
 
-# Creating and saving histograms of each variable to png files:
+# Plot and save histograms to show distribution of each numeric feature:
+
 # Histogram: Sepal Length
 plt.figure()
 plt.hist(df['sepal length (cm)'], bins=15, edgecolor='black')
@@ -75,8 +80,9 @@ plt.grid()
 plt.savefig('fig4_hist_petal_width.png')
 plt.close()
 
-# Creating and saving scatter plots for each pair
-# of variables grouped by species:
+# Create scatter plots for feature pairs, colored by species
+# These plots help visualize how species differ based on two features:
+
 # Define colors and labels
 colors = ["dodgerblue", "darkorange", "mediumvioletred"]
 labels = iris.target_names
@@ -109,8 +115,9 @@ plt.legend()
 plt.savefig("fig6_petal_scatter_plot.png")
 plt.close()
 
-# Creating and saving box plots for Petal Length
-# and Sepal Length grouped by species:
+# Create box plots to show distribution of petal and sepal lengths by species
+# Helps compare median, range, and outliers among species for each feature:
+
 # Define custom colors
 colors = ["dodgerblue", "darkorange", "mediumvioletred"]
 species_labels = ["Setosa", "Versicolor", "Virginica"]
@@ -139,7 +146,8 @@ plt.grid(True)
 plt.savefig("fig8_boxplot_sepal_length_by_species.png")
 plt.close()
 
-# Creating and saving a correlation heatmap:
+# Create a heatmap to show correlations between numeric features:
+
 # Correlation heatmap of all features
 correlation = df.drop(columns='species').corr() #Calculate the correlation coeff between features
 
