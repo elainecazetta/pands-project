@@ -139,3 +139,16 @@ plt.grid(True)
 plt.savefig("fig8_boxplot_sepal_length_by_species.png")
 plt.close()
 
+# Creating and saving a correlation heatmap:
+# Correlation heatmap of all features
+correlation = df.drop(columns='species').corr() #Calculate the correlation coeff between features
+
+plt.figure(figsize=(8, 6))
+plt.imshow(correlation, cmap="GnBu", interpolation="nearest")
+plt.colorbar(label="Correlation Coefficient")
+plt.xticks(ticks=np.arange(len(correlation.columns)), labels=correlation.columns, rotation=45)
+plt.yticks(ticks=np.arange(len(correlation.columns)), labels=correlation.columns)
+plt.title("Correlation Heatmap of Iris Dataset Features")
+plt.tight_layout()
+plt.savefig("fig9_correlation_heatmap.png")
+plt.close()
