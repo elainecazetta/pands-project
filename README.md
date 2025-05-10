@@ -35,7 +35,7 @@ The flowers belong to three species:
 
 ---
 
-## Repository Contents  
+## Repository Contents:    
 
 - `iris.csv` – The dataset used in this analysis  
 - `analysis.py` – Python script that:
@@ -48,7 +48,7 @@ The flowers belong to three species:
 
 ---
 
-## Requirements  
+## Requirements:    
 
 To run this project, you'll need **Python 3** and the following packages:
 
@@ -58,7 +58,7 @@ pip install numpy pandas matplotlib seaborn
 
 ---
 
-## Tools & Libraries  
+## Tools & Libraries:    
 
 - [`numpy`](https://numpy.org/) – For numerical operations and working with arrays  
 - [`pandas`](https://pandas.pydata.org/) – For data manipulation and analysis  
@@ -68,7 +68,7 @@ pip install numpy pandas matplotlib seaborn
 
 ---
 
-## References  
+## References:    
 [1] R. Fisher. Iris, UCI Machine Learning Repository, 1936. Available in: https://doi.org/10.24432/C56C76. [Accessed 04 May 2025]  
 [2] Kelleher, Curran. The Iris Dataset Explained. Available in: https://gist.github.com/curran/a08a1080b88344b0c8a7. [Accessed 05 May 2025]  
 [3] Iris Flower data set - Wikipedia. Available in: https://en.wikipedia.org/wiki/Iris_flower_data_set. [Accessed 06 May 2025]  
