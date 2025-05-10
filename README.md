@@ -8,7 +8,8 @@
 
 # Project: Iris Dataset Analysis
 
-![Iris Flowers](https://github.com/elainecazetta/private_folder/blob/main/Iris_Flower.png)
+[4]  
+![Iris Flowers](https://miro.medium.com/v2/resize:fit:720/format:webp/0*11IwZmSKXw77eYz5)  
 
 ---
 
