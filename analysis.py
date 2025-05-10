@@ -108,3 +108,33 @@ plt.grid()
 plt.legend()
 plt.savefig("fig6_petal_scatter_plot.png")
 plt.close()
+
+# Creating and saving box plots for Petal Length
+# and Sepal Length grouped by species:
+# Define custom colors
+colors = ["dodgerblue", "darkorange", "mediumvioletred"]
+species_labels = ["Setosa", "Versicolor", "Virginica"]
+
+# Box Plot: Petal Length by Species
+petal_lengths = [df[df["species"] == i]["petal length (cm)"] for i in range(3)]
+plt.figure(figsize=(8, 6))
+box = plt.boxplot(petal_lengths, patch_artist=True, tick_labels=species_labels)
+for patch, color in zip(box['boxes'], colors):
+    patch.set_facecolor(color)
+plt.title("Box Plot of Petal Length by Species")
+plt.ylabel("Petal Length (cm)")
+plt.grid(True)
+plt.savefig("fig7_boxplot_petal_length_by_species.png")
+plt.close()
+
+# Box Plot: Sepal Length by Species
+sepal_lengths = [df[df["species"] == i]["sepal length (cm)"] for i in range(3)]
+plt.figure(figsize=(8, 6))
+box = plt.boxplot(sepal_lengths, patch_artist=True, tick_labels=species_labels)
+for patch, color in zip(box['boxes'], colors):
+    patch.set_facecolor(color)
+plt.title("Box Plot of Sepal Length by Species")
+plt.ylabel("Sepal Length (cm)")
+plt.grid(True)
+plt.savefig("fig8_boxplot_sepal_length_by_species.png")
+plt.close()
