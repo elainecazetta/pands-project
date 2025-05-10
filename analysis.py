@@ -1,4 +1,4 @@
-# Author: Elaine Cazetta
+# Author: Elaine R. Cazetta
 # Description: This script is part of the Iris Dataset Analysis Project for the 
 # Programming and Scripting module. It performs basic data analysis using the 
 # Iris dataset, including:
