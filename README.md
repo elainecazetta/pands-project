@@ -15,7 +15,7 @@
 
 ## About the project:
 
-This project was developed as part of the *Programming and Scripting* module. It aims to analize the famous [Fisher's Iris Dataset](https://archive.ics.uci.edu/dataset/53/iris)[1], apply basic data processing and visualization techniques, and present meaningful insights using Python.
+This project was developed as part of the *Programming and Scripting* module. It aims to analyze the famous [Fisher's Iris Dataset](https://archive.ics.uci.edu/dataset/53/iris)[1], apply basic data processing and visualization techniques, and present meaningful insights using Python.
 
 ---
 
@@ -40,11 +40,11 @@ The flowers belong to three species:
 
 - `iris.csv` – The dataset used in this analysis  
 - `analysis.py` – Python script that:
-  - Outputs a summary of each variable to a text file
+  - Outputs a summary of each variable to a single text file
   - Creates histograms for each feature and saves them as PNGs
-  - Generates scatter plots of each feature pair
-- `iris_analysis.ipynb` – Jupyter notebook with notes and commentary
-- `plots` – Files containing all output charts
+  - Generates scatter plots, boxplots, heatmaps and pairplots and saves them as PNGs
+- `analysis.ipynb` – Jupyter notebook with notes and commentary
+- `figures` – Files containing all output charts
 - `summary.txt` – Summary statistics for each feature
 
 ---
@@ -54,7 +54,7 @@ The flowers belong to three species:
 To run this project, you'll need **Python 3** and the following packages:
 
 ```bash
-pip install numpy pandas matplotlib seaborn
+pip install numpy pandas matplotlib seaborn scikit-learn
 ```
 
 ---
