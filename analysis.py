@@ -73,7 +73,7 @@ plt.title('Histogram of Sepal Length')
 plt.xlabel('Sepal Length (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('fig1_hist_sepal_length.png')
+plt.savefig('fig01_hist_sepal_length.png')
 plt.close()
 
 # Histogram: Sepal Width
@@ -83,7 +83,7 @@ plt.title('Histogram of Sepal Width')
 plt.xlabel('Sepal Width (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('fig2_hist_sepal_width.png')
+plt.savefig('fig02_hist_sepal_width.png')
 plt.close()
 
 # Histogram: Petal Length
@@ -93,7 +93,7 @@ plt.title('Histogram of Petal Length')
 plt.xlabel('Petal Length (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('fig3_hist_petal_length.png')
+plt.savefig('fig03_hist_petal_length.png')
 plt.close()
 
 # Histogram: Petal Width
@@ -103,7 +103,7 @@ plt.title('Histogram of Petal Width')
 plt.xlabel('Petal Width (cm)')
 plt.ylabel('Frequency')
 plt.grid()
-plt.savefig('fig4_hist_petal_width.png')
+plt.savefig('fig04_hist_petal_width.png')
 plt.close()
 
 #-----------------------------------------------------------------#
@@ -131,7 +131,7 @@ plt.ylabel("Sepal Width (cm)")
 plt.title("Sepal Length vs Sepal Width")
 plt.grid()
 plt.legend()
-plt.savefig("fig5_sepal_scatter_plot.png")
+plt.savefig("fig05_sepal_scatter_plot.png")
 plt.close()
 
 # Scatter Plot: Petal Length vs Petal Width
@@ -150,7 +150,7 @@ plt.ylabel("Petal Width (cm)")
 plt.title("Petal Length vs Petal Width")
 plt.grid()
 plt.legend()
-plt.savefig("fig6_petal_scatter_plot.png")
+plt.savefig("fig06_petal_scatter_plot.png")
 plt.close()
 
 #-----------------------------------------------------------------#
@@ -183,7 +183,7 @@ for i, feature in enumerate(features, start=7):  # Start numbering at figure 7
     plt.grid()
 
     # Save the plot as a PNG file
-    filename = f'fig{i}_boxplot_{feature.replace(" ", "_")}_by_species.png'
+    filename = f'fig{i:02d}_boxplot_{feature.replace(" ", "_")}_by_species.png'
     plt.savefig(filename)
     plt.close()
 
