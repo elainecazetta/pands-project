@@ -45,10 +45,18 @@ df['species'] = iris.target
 species_map = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
 df['species'] = df['species'].replace(species_map)
 
+# source:
+# https://chatgpt.com/share/6821fb89-1d80-8007-8ea8-d3e486aad534
+
+
 #-----------------------------------------------------------------#
 
 # Save the full dataset to a CSV file for external use or review
 df.to_csv('iris.csv', index=False)
+
+# source: 
+# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
+
 
 #-----------------------------------------------------------------#
 
@@ -61,6 +69,10 @@ summary = df.describe()
 with open('summary.txt', 'w') as f:
     f.write("Summary of Each Variable in the Iris Dataset\n")
     f.write(summary.to_string()) # Converts summary dataframe into a string
+
+# source: 
+# https://www.w3schools.com/python/python_file_write.asp
+
 
 #-----------------------------------------------------------------#
 
@@ -105,6 +117,11 @@ plt.ylabel('Frequency')
 plt.grid()
 plt.savefig('fig04_hist_petal_width.png')
 plt.close()
+
+# source: 
+# https://chatgpt.com/share/6820ea12-e104-8007-831f-db480af667de
+# https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/
+
 
 #-----------------------------------------------------------------#
 
@@ -153,6 +170,13 @@ plt.legend()
 plt.savefig("fig06_petal_scatter_plot.png")
 plt.close()
 
+# source: 
+# https://www.geeksforgeeks.org/scatter-plot/
+# https://chatgpt.com/share/6821016f-0dd0-8007-94ac-968ed8236eec
+# https://www.w3schools.com/python/matplotlib_scatter.asp
+# https://www.analyticsvidhya.com/blog/2024/02/scatter-plot-visualization-in-python-using-matplotlib/
+
+
 #-----------------------------------------------------------------#
 
 # Create box plots to show distribution of each feature grouped by species.
@@ -187,6 +211,11 @@ for i, feature in enumerate(features, start=7):  # Start numbering at figure 7
     plt.savefig(filename)
     plt.close()
 
+# source: 
+# https://seaborn.pydata.org/generated/seaborn.boxplot.html
+# https://www.atlassian.com/data/charts/box-plot-complete-guide
+
+
 #-----------------------------------------------------------------#
 
 # Create heatmaps to show correlations between numeric features:
@@ -215,6 +244,11 @@ for i, species in enumerate(species_list, start=11): # Start figure at 11
     plt.savefig(filename)
     plt.close()
 
+# source: 
+# https://chatgpt.com/share/6821b998-ddc0-8007-888e-e794552f061b
+# https://www.datacamp.com/tutorial/seaborn-heatmaps
+
+
 #-----------------------------------------------------------------#
 
 # Create pairplots to show relationships between variables:
@@ -234,5 +268,12 @@ plt.suptitle("Pairplot of Iris Dataset", y=1.02)
 # Save the figure
 plt.savefig("fig14_pairplot_iris_dataset.png")
 plt.close()
+
+# source:
+# https://www.geeksforgeeks.org/data-visualization-with-pairplot-seaborn-and-pandas/
+# https://chatgpt.com/c/6821c341-9b08-8007-8a61-d03c148ed684
+# https://www.datacamp.com/tutorial/seaborn-barplot
+# https://chatgpt.com/share/6821c517-0f88-8007-a15b-c4b78b5dc998
+
 
 #-----------------------------------------------------------------#
